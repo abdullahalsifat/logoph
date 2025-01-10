@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo PH</title>
+    <!-- Developer - abdullahalsifat.com -->
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <!-- Style Font -->
+    <style>
+        body{
+            font-family: "Urbanist", sans-serif;
+        }
+        .peer:checked + .peer-label .toggle-btn {
+            transform: rotate(180deg);
+        }
+        #faq1 ~ .peer-checked.block {
+            display: block;
+        }
+        .custom-border-radius {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+        @media (max-width: 900px){
+            .header_nav{
+                position: fixed;
+                left: 0;
+                top: -100%;
+                border: none;
+                padding: 20px 0 30px 20px;
+                background-color: #ffffff;
+                width: 100%;
+                border-bottom: 1px solid #0F0E0E1A;
+            }
+            .header_nav ul{
+                flex-direction: column;
+                gap: 20px;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+            .dark .header_nav {
+                background-color: #0f172a;
+                border-bottom: 1px solid #f8fafc0f;
+            }
+            #open_menu{
+                display: block;
+            }
+            #check:checked ~ .icon #open_menu{
+                display: none;
+            }
+            #check:checked ~ .icon #close_menu{
+                display: block;
+            }
+            #check:checked ~ .header_nav{
+                top: 68px;
+            }
+        }
+    </style>
+
+    <!-- Dark Mode Install -->
+    <script>
+        tailwind.config = {
+          darkMode: 'class',
+        }
+    </script>    
+</head>
+<body class="bg-white text-black dark:bg-slate-900 dark:text-whtie transition-all duration-500 tracking-wider">
+
+    <!-- Header Section -->
+    <header id="header" class="sticky top-0 z-10">
+        <section class="xl:px-[100px] px-5 py-4 border-b border-[#0F0E0E1A] dark:border-[#f8fafc0f] dark:bg-[#0f172abf]">
+            <div class="max-w-[1400px] mx-auto flex justify-between items-center">
+                <!-- Logo -->
+                <div>
+                    <h1 class="text-3xl font-bold bg-gradient-to-l from-gray-400 to-gray-700 text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-cyan-500 dark:to-pink-500">Logo <span>PH</span></h1>
+                </div>
+                <!-- nav -->    
+                <div class="flex justify-center items-center gap-5">
+                    <!-- Open / Close Nav Button -->
+                    <input type="checkbox" id="check" class="hidden">
+                    <label for="check" class="icon order-2">
+                        <i class="fa-solid fa-bars cursor-pointer hidden text-black dark:text-white text-lg" id="open_menu"></i>
+                        <i class="fa-solid fa-x cursor-pointer hidden text-black dark:text-white text-lg" id="close_menu"></i>
+                    </label>
+                    <!-- Nav Content -->
+                    <nav class="header_nav dark:text-white border-r border-[#0F0E0E1A] dark:border-[#253349] pr-6">
+                        <ul class="flex justify-center items-center gap-8 font-medium">
+                            <li class="hover:text-sky-400"><a href="#">Home</a></li>
+                            <li class="hover:text-sky-400"><a href="#">About Me</a></li>
+                            <li class="hover:text-sky-400"><a href="#">Projects</a></li>
+                            <li class="hover:text-sky-400"><a href="#">Testimonials</a></li>
+                            <li class="hover:text-sky-400"><a href="#"><button class="font-medium text-sky-600 dark:text-sky-400 bg-sky-400/10 rounded-full py-1 px-3 hover:bg-sky-400/20">Download CV</button></a></li>
+                        </ul>
+                    </nav>
+                    <!-- Dark / White Mode Button -->
+                    <div>
+                        <button onclick="toggleDarkMode()" class="text-black dark:text-sky-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                            </svg>                          
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- Header END -->
+
+    <!-- Main Section -->
+    <main>
+        <!-- Hero Section -->
+        <section class="my-[50px] xl:px-[100px] px-5">
+            <div class="max-w-[1400px] mx-auto flex flex-col-reverse lg:flex-row justify-center items-center gap-10">
+                <!-- Lefet -->
+                <div class="lg:w-[50%] space-y-5">
+                    <div class="space-y-1">
+                        <p class="dark:text-[#c3c4c9] font-semibold text-xl">I Am Web Developer</p>
+                        <h2 class="text-3xl md:text-5xl lg:text-6xl md:lg:w-[100%] lg:w-[75%] font-bold bg-gradient-to-b from-gray-900 to-gray-600 text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-pink-600 dark:to-purple-500">HI! This is Abdullah AL Sifat</h2>
+                    </div>
+                    <p class="dark:text-[#adafb4]">As a web designer with four years of experience, I specialize in creating visually appealing and user-friendly websites. My expertise includes responsive design, UI/UX principles, and collaborating with clients to bring their visions to life.</p>
+                    <div class="flex items-center gap-3">
+                        <button class="dark:text-white flex items-center gap-3 border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-4 rounded-full">Download CV
+                            <span>
+                                <svg fill="#48cf73" width="24px" height="24px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#48cf73"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>download-cloud</title> <path d="M0 16q0 2.912 1.824 5.088t4.576 2.752q0.032 0 0.032-0.032v-0.064t0.032-0.032q0.544-1.344 1.344-2.176t2.208-1.184v-2.336q0-2.496 1.728-4.256t4.256-1.76 4.256 1.76 1.76 4.256v2.336q1.376 0.384 2.176 1.216t1.344 2.144l0.096 0.288h0.384q2.464 0 4.224-1.76t1.76-4.224v-2.016q0-2.464-1.76-4.224t-4.224-1.76q-0.096 0-0.32 0.032 0.32-1.152 0.32-2.048 0-3.296-2.368-5.632t-5.632-2.368q-2.88 0-5.056 1.824t-2.784 4.544q-1.152-0.352-2.176-0.352-3.296 0-5.664 2.336t-2.336 5.664v1.984zM10.016 25.824q-0.096 0.928 0.576 1.6l4 4q0.576 0.576 1.408 0.576t1.408-0.576l4-4q0.672-0.672 0.608-1.6-0.064-0.32-0.16-0.576-0.224-0.576-0.736-0.896t-1.12-0.352h-1.984v-5.984q0-0.832-0.608-1.408t-1.408-0.608-1.408 0.608-0.576 1.408v5.984h-2.016q-0.608 0-1.12 0.352t-0.736 0.896q-0.096 0.288-0.128 0.576z"></path> </g></svg>
+                            </span>
+                        </button>
+                        <a href="https://www.linkedin.com/in/abdullahallsifat/">
+                            <i class="fa-brands fa-linkedin-in border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-4 rounded-full text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-purple-200 dark:to-purple-800 bg-gradient-to-b from-gray-900 to-gray-600"></i>
+                        </a>
+                        <a href="https://github.com/abdullahalsifat">
+                            <i class="fa-brands fa-github border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-4 rounded-full text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-purple-200 dark:to-purple-800 bg-gradient-to-b from-gray-900 to-gray-600  "></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Right -->
+                <div class="lg:w-[50%] flex justify-center">
+                    <img class="custom-border-radius w-[30%] md:w-[35%] lg:w-[55%] border-4 border-[#3d4755] dark:border-[#aa52f0]" src="https://abdullahalsifat.com/wp-content/uploads/2024/08/abdullah-al-sifat-scaled.webp" alt="Abdullah-Al-Sifat">
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialties Section -->
+        <section class="my-[60px] xl:px-[100px] px-5">
+            <div class="max-w-[1400px] mx-auto flex flex-col gap-10">
+                <!-- Specialties Header -->
+                <div class="flex flex-col justify-center items-center gap-3 dark:text-white">
+                    <p class="uppercase text-[#797C86]">Specialties</p>
+                    <h2 class="text-2xl lg:text-4xl uppercase font-bold text-center bg-gradient-to-b from-gray-900 to-gray-600 text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-purple-200 dark:to-purple-800">My specialities</h2>
+                    <p class="text-[14px] lg:text-[16px] text-center xl:w-[55%] lg:w-[70%] md:w-[80%] text-[#797C86]">As a web designer with four years of experience, I specialize in creating visually appealing and user-friendly websites. My expertise includes responsive design.</p>
+                </div>
+                <!-- Specialties Skill -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                    <!-- Card 1 -->
+                    <div class="w-full border border-[#0F0E0E1A] dark:border-none dark:bg-gradient-to-tr from-[#222630] to-[#0f172a] rounded-lg flex flex-col justify-center items-center gap-4 p-8">
+                        <img src="img/Web-development.png" alt="Web-Development">
+                        <h2 class="dark:text-white text-center font-bold">Front-End Development</h2>
+                        <p class="dark:text-[#E6E6E682] text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="w-full border border-[#0F0E0E1A] dark:border-none dark:bg-gradient-to-tr from-[#222630] to-[#0f172a] rounded-lg flex flex-col justify-center items-center gap-4 p-8">
+                        <img src="img/backend.png" alt="Web-Development">
+                        <h2 class="dark:text-white text-center font-bold">Backend Development</h2>
+                        <p class="dark:text-[#E6E6E682] text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="w-full border border-[#0F0E0E1A] dark:border-none dark:bg-gradient-to-tr from-[#222630] to-[#0f172a] rounded-lg flex flex-col justify-center items-center gap-4 p-8">
+                        <img src="img/full-stack.png" alt="Full-Stack-Web-Development">
+                        <h2 class="dark:text-white text-center font-bold">Full-Stack Development</h2>
+                        <p class="dark:text-[#E6E6E682] text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="w-full border border-[#0F0E0E1A] dark:border-none dark:bg-gradient-to-tr from-[#222630] to-[#0f172a] rounded-lg flex flex-col justify-center items-center gap-4 p-8">
+                        <img src="img/Web-Application-Security.png" alt="Web Application Security">
+                        <h2 class="dark:text-white text-center font-bold">Web Application Security</h2>
+                        <p class="dark:text-[#E6E6E682] text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="w-full border border-[#0F0E0E1A] dark:border-none dark:bg-gradient-to-tr from-[#222630] to-[#0f172a] rounded-lg flex flex-col justify-center items-center gap-4 p-8">
+                        <img src="img//E-commerce-Development.png" alt="E-commerce Development">
+                        <h2 class="dark:text-white text-center font-bold">E-commerce Development</h2>
+                        <p class="dark:text-[#E6E6E682] text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="w-full border border-[#0F0E0E1A] dark:border-none dark:bg-gradient-to-tr from-[#222630] to-[#0f172a] rounded-lg flex flex-col justify-center items-center gap-4 p-8">
+                        <img src="img/Cloud-Based-Development.png" alt="Cloud-Based Development">
+                        <h2 class="dark:text-white text-center font-bold">Cloud-Based Development</h2>
+                        <p class="dark:text-[#E6E6E682] text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="w-full border border-[#0F0E0E1A] dark:border-none dark:bg-gradient-to-tr from-[#222630] to-[#0f172a] rounded-lg flex flex-col justify-center items-center gap-4 p-8">
+                        <img src="img/Progressive-Web-Apps.png" alt="Progressive Web Apps">
+                        <h2 class="dark:text-white text-center font-bold">Progressive Web Apps</h2>
+                        <p class="dark:text-[#E6E6E682] text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="w-full border border-[#0F0E0E1A] dark:border-none dark:bg-gradient-to-tr from-[#222630] to-[#0f172a] rounded-lg flex flex-col justify-center items-center gap-4 p-8">
+                        <img src="img/AI-Powered-Development.png" alt="Web-Development">
+                        <h2 class="dark:text-white text-center font-bold">AI-Powered Development</h2>
+                        <p class="dark:text-[#E6E6E682] text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Specialties End -->
+        
+        <!-- Recent Works Section -->
+        <section class="my-[60px] xl:px-[100px] px-5">
+            <div class="max-w-[1400px] mx-auto flex flex-col gap-6">
+                <!-- Recent Works Header -->
+                <div class="flex flex-col justify-center items-center gap-3 dark:text-white">
+                    <p class="uppercase text-[#797C86]">recent works</p>
+                    <h2 class="text-2xl lg:text-4xl uppercase font-bold text-center bg-gradient-to-b from-gray-900 to-gray-600 text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-purple-200 dark:to-purple-800">My Recent works</h2>
+                    <p class="text-[14px] lg:text-[16px] text-center xl:w-[55%] lg:w-[70%] md:w-[80%] text-[#797C86]">As a web designer with four years of experience, I specialize in creating visually appealing and user-friendly websites. My expertise includes responsive design.</p>
+                </div>
+                <!-- Category -->
+                <div class="flex justify-center items-center">
+                    <nav class="font-medium text-black dark:text-sky-400 bg-sky-400/10 rounded-full py-2 px-3 hover:bg-sky-400/20 inline-block dark:border-none border border-[#0F0E0E1A]">
+                        <ul class="flex justify-center items-center gap-5">
+                            <li class="bg-sky-400/20 px-4 py-1 rounded-full dark:border-none border border-[#0F0E0E1A]"><a href="#">All</a></li>
+                            <li><a href="#">Website</a></li>
+                            <li><a href="#">Android Apps</a></li>
+                            <li><a href="#">Machine Learning</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Recent Works Project -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <!-- Project 1 -->
+                    <div class="border border-[#0F0E0E1A] dark:border-[#f8fafc0f] p-5 rounded-2xl flex flex-col gap-3">
+                        <img class="rounded-xl" src="img/Modern-Portfolio.webp" alt="Modern Portfolio">
+                        <div class="flex flex-wrap items-center gap-2 py-1">
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Html</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Tailwind Css</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">React Js</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Node Js</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">JavaScript</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Git</a></p>
+                        </div>
+                        <div>
+                            <h2 class="dark:text-white font-bold text-xl">Modern Portfolio</h2>
+                            <p class="text-[#797C86] text-[14px]">Nov 2024 - Abdullah</p>
+                        </div>
+                        <p class="text-[#797C86]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit</p>
+                        <div class="flex items-center gap-3">
+                            <button class="dark:text-sky-400 border dark:border-[#f8fafc0f] rounded-full py-1 px-3 hover:bg-sky-400/20"><a href="https://nerdyph.abdullahalsifat.com/">View Code</a></button>
+                            <button class="dark:text-sky-400 bg-sky-400/10 rounded-full py-1 px-3 hover:bg-sky-400/20 border dark:border-[#f8fafc0f]"><a href="https://nerdyph.abdullahalsifat.com/">View Live</a></button>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="border border-[#0F0E0E1A] dark:border-[#f8fafc0f] p-5 rounded-2xl flex flex-col gap-3"> 
+                        <img class="rounded-xl" src="img/nerdy-ph1.webp" alt="Nerdy PH">
+                        <div class="flex flex-wrap items-center gap-2 py-1">
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Html</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Tailwind Css</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">React Js</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Node Js</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">JavaScript</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Git</a></p>
+                        </div>
+                        <div>
+                            <h2 class="dark:text-white font-bold text-xl">Nerdy PH</h2>
+                            <p class="text-[#797C86] text-[14px]">Nov 2024 - Abdullah</p>
+                        </div>
+                        <p class="text-[#797C86]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit</p>
+                        <div class="flex items-center gap-3">
+                            <button class="dark:text-sky-400 border dark:border-[#f8fafc0f] rounded-full py-1 px-3 hover:bg-sky-400/20"><a href="https://ecomph.abdullahalsifat.com/">View Live</a></button>
+                            <button class="dark:text-sky-400 bg-sky-400/10 rounded-full py-1 px-3 hover:bg-sky-400/20 border dark:border-[#f8fafc0f]"><a href="https://ecomph.abdullahalsifat.com/">View Live</a></button>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="border border-[#0F0E0E1A] dark:border-[#f8fafc0f] p-5 rounded-2xl flex flex-col gap-3">
+                        <img class="rounded-xl" src="img/John-doe.webp" alt="John Doe">
+                        <div class="flex flex-wrap items-center gap-2 py-1">
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Html</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Tailwind Css</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">React Js</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Node Js</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">JavaScript</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Git</a></p>
+                        </div>
+                        <div>
+                            <h2 class="dark:text-white font-bold text-xl">John Doe</h2>
+                            <p class="text-[#797C86] text-[14px]">Nov 2024 - Abdullah</p>
+                        </div>
+                        <p class="text-[#797C86]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit</p>
+                        <div class="flex items-center gap-3">
+                            <button class="dark:text-sky-400 border dark:border-[#f8fafc0f] rounded-full py-1 px-3 hover:bg-sky-400/20"><a href="https://nerdyph.abdullahalsifat.com/">View Code</a></button>
+                            <button class="dark:text-sky-400 bg-sky-400/10 rounded-full py-1 px-3 hover:bg-sky-400/20 border dark:border-[#f8fafc0f]"><a href="https://nerdyph.abdullahalsifat.com/">View Live</a></button>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="border border-[#0F0E0E1A] dark:border-[#f8fafc0f] p-5 rounded-2xl flex flex-col gap-3">
+                        <img class="rounded-xl" src="img/Real-Estate.webp" alt="Real Estate">
+                        <div class="flex flex-wrap items-center gap-2 py-1">
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Html</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Tailwind Css</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">React Js</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Node Js</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">JavaScript</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Git</a></p>
+                        </div>
+                        <div>
+                            <h2 class="dark:text-white font-bold text-xl">Real Estate</h2>
+                            <p class="text-[#797C86] text-[14px]">Nov 2024 - Abdullah</p>
+                        </div>
+                        <p class="text-[#797C86]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit</p>
+                        <div class="flex items-center gap-3">
+                            <button class="dark:text-sky-400 border dark:border-[#f8fafc0f] rounded-full py-1 px-3 hover:bg-sky-400/20"><a href="https://ecomph.abdullahalsifat.com/">View Live</a></button>
+                            <button class="dark:text-sky-400 bg-sky-400/10 rounded-full py-1 px-3 hover:bg-sky-400/20 border dark:border-[#f8fafc0f]"><a href="https://ecomph.abdullahalsifat.com/">View Live</a></button>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="border border-[#0F0E0E1A] dark:border-[#f8fafc0f] p-5 rounded-2xl flex flex-col gap-3">
+                        <img class="rounded-xl" src="img/ecomph.webp" alt="eCom PH">
+                        <div class="flex flex-wrap items-center gap-2 py-1">
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Html</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Tailwind Css</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">React Js</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Node Js</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">JavaScript</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Git</a></p>
+                        </div>
+                        <div>
+                            <h2 class="dark:text-white font-bold text-xl">eCom PH</h2>
+                            <p class="text-[#797C86] text-[14px]">Nov 2024 - Abdullah</p>
+                        </div>
+                        <p class="text-[#797C86]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit</p>
+                        <div class="flex items-center gap-3">
+                            <button class="dark:text-sky-400 border dark:border-[#f8fafc0f] rounded-full py-1 px-3 hover:bg-sky-400/20"><a href="https://nerdyph.abdullahalsifat.com/">View Code</a></button>
+                            <button class="dark:text-sky-400 bg-sky-400/10 rounded-full py-1 px-3 hover:bg-sky-400/20 border dark:border-[#f8fafc0f]"><a href="https://nerdyph.abdullahalsifat.com/">View Live</a></button>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="border border-[#0F0E0E1A] dark:border-[#f8fafc0f] p-5 rounded-2xl flex flex-col gap-3">
+                        <img class="rounded-xl" src="img/management.webp" alt="Management">
+                        <div class="flex flex-wrap items-center gap-2 py-1">
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Html</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Tailwind Css</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">React Js</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Node Js</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">JavaScript</a></p>
+                            <p class="dark:text-sky-400 dark:bg-sky-400/10 hover:bg-sky-400/20 rounded-2xl py-[2px] px-3 dark:border-[#f8fafc0f] border border-[#0F0E0E1A] text-[15px]"><a href="#">Git</a></p>
+                        </div>
+                        <div>
+                            <h2 class="dark:text-white font-bold text-xl">Management</h2>
+                            <p class="text-[#797C86] text-[14px]">Nov 2024 - Abdullah</p>
+                        </div>
+                        <p class="text-[#797C86]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit</p>
+                        <div class="flex items-center gap-3">
+                            <button class="dark:text-sky-400 border dark:border-[#f8fafc0f] rounded-full py-1 px-3 hover:bg-sky-400/20"><a href="https://ecomph.abdullahalsifat.com/">View Live</a></button>
+                            <button class="dark:text-sky-400 bg-sky-400/10 rounded-full py-1 px-3 hover:bg-sky-400/20 border dark:border-[#f8fafc0f]"><a href="https://ecomph.abdullahalsifat.com/">View Live</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Recent Works END -->
+
+        <!-- Skills Section -->
+        <section class="my-[60px] xl:px-[100px] px-5">
+            <div class="max-w-[1400px] mx-auto">
+                <!-- Skill Header -->
+                <div class="flex flex-col justify-center items-center gap-3 dark:text-white">
+                    <p class="uppercase text-[#797C86]">Skills</p>
+                    <h2 class="text-2xl lg:text-4xl uppercase font-bold text-center bg-gradient-to-b from-gray-900 to-gray-600 text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-purple-200 dark:to-purple-800">My Skills</h2>
+                    <p class="text-[14px] lg:text-[16px] text-center xl:w-[55%] lg:w-[70%] md:w-[80%] text-[#797C86]">As a web designer with four years of experience, I specialize in creating visually appealing and user-friendly websites. My expertise includes responsive design.</p>
+                </div>
+                <!-- Skills Card -->
+                <div class="max-w-[1100px] mx-auto py-6 grid lg:grid-cols-2 md:grid-cols-1 gap-5">
+                    <!-- Card 1 -->
+                    <div class="flex flex-col gap-5 justify-center items-center border border-[#0F0E0E1A] dark:border-[#f8fafc0f] p-5 rounded-2xl">
+                        <h2 class="text-2xl dark:text-white font-semibold">Front End</h2>
+                        <div class="flex flex-wrap gap-3 justify-center">
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
+                                <p>HTML</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path> <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"></path> </g></svg>
+                                <p>CSS</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg fill="#38bdf8" width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.036c-2.667 0-4.333 1.325-5 3.976 1-1.325 2.167-1.822 3.5-1.491.761.189 1.305.738 1.906 1.345C13.387 10.855 14.522 12 17 12c2.667 0 4.333-1.325 5-3.976-1 1.325-2.166 1.822-3.5 1.491-.761-.189-1.305-.738-1.907-1.345-.98-.99-2.114-2.134-4.593-2.134zM7 12c-2.667 0-4.333 1.325-5 3.976 1-1.326 2.167-1.822 3.5-1.491.761.189 1.305.738 1.907 1.345.98.989 2.115 2.134 4.594 2.134 2.667 0 4.333-1.325 5-3.976-1 1.325-2.167 1.822-3.5 1.491-.761-.189-1.305-.738-1.906-1.345C10.613 13.145 9.478 12 7 12z"></path></g></svg>
+                                <p>Tailwind CSS</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M0 222.991C0 241.223 14.779 256 33.009 256H222.99C241.223 256 256 241.221 256 222.991V33.01C256 14.777 241.221 0 222.991 0H33.01C14.777 0 0 14.779 0 33.009V222.99z" fill="#563D7C"></path><path d="M106.158 113.238V76.985h31.911c3.04 0 5.97.253 8.792.76 2.822.506 5.319 1.41 7.49 2.713 2.17 1.303 3.907 3.112 5.21 5.427 1.302 2.316 1.954 5.283 1.954 8.9 0 6.513-1.954 11.217-5.862 14.111-3.907 2.895-8.9 4.342-14.979 4.342h-34.516zM72.075 50.5v155h75.112c6.947 0 13.713-.868 20.298-2.605 6.585-1.737 12.446-4.414 17.584-8.032 5.137-3.618 9.226-8.286 12.265-14.002 3.04-5.717 4.559-12.483 4.559-20.298 0-9.697-2.352-17.982-7.055-24.856-4.704-6.875-11.832-11.687-21.384-14.437 6.947-3.328 12.194-7.598 15.74-12.808 3.545-5.21 5.318-11.722 5.318-19.538 0-7.236-1.194-13.314-3.582-18.235-2.388-4.92-5.753-8.864-10.095-11.831-4.341-2.967-9.551-5.102-15.63-6.404-6.078-1.303-12.808-1.954-20.189-1.954H72.075zm34.083 128.515v-42.549h37.121c7.381 0 13.315 1.7 17.802 5.102 4.486 3.401 6.73 9.081 6.73 17.041 0 4.053-.688 7.381-2.063 9.986-1.375 2.605-3.22 4.668-5.536 6.187-2.315 1.52-4.993 2.605-8.032 3.257-3.04.65-6.223.976-9.552.976h-36.47z" fill="#FFF"></path></g></svg>
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" fill="#F7DF1E"> </path> <path d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026" fill="#000000"> </path> <path d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413" fill="#000000"> </path> </g> </g></svg>
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_reactjs</title><circle cx="16" cy="15.974" r="2.5" style="fill:#00d8ff"></circle><path d="M16,21.706a28.385,28.385,0,0,1-8.88-1.2,11.3,11.3,0,0,1-3.657-1.958A3.543,3.543,0,0,1,2,15.974c0-1.653,1.816-3.273,4.858-4.333A28.755,28.755,0,0,1,16,10.293a28.674,28.674,0,0,1,9.022,1.324,11.376,11.376,0,0,1,3.538,1.866A3.391,3.391,0,0,1,30,15.974c0,1.718-2.03,3.459-5.3,4.541A28.8,28.8,0,0,1,16,21.706Zm0-10.217a27.948,27.948,0,0,0-8.749,1.282c-2.8.977-4.055,2.313-4.055,3.2,0,.928,1.349,2.387,4.311,3.4A27.21,27.21,0,0,0,16,20.51a27.6,27.6,0,0,0,8.325-1.13C27.4,18.361,28.8,16.9,28.8,15.974a2.327,2.327,0,0,0-1.01-1.573,10.194,10.194,0,0,0-3.161-1.654A27.462,27.462,0,0,0,16,11.489Z" style="fill:#00d8ff"></path><path d="M10.32,28.443a2.639,2.639,0,0,1-1.336-.328c-1.432-.826-1.928-3.208-1.327-6.373a28.755,28.755,0,0,1,3.4-8.593h0A28.676,28.676,0,0,1,16.71,5.995a11.376,11.376,0,0,1,3.384-2.133,3.391,3.391,0,0,1,2.878,0c1.489.858,1.982,3.486,1.287,6.859a28.806,28.806,0,0,1-3.316,8.133,28.385,28.385,0,0,1-5.476,7.093,11.3,11.3,0,0,1-3.523,2.189A4.926,4.926,0,0,1,10.32,28.443Zm1.773-14.7a27.948,27.948,0,0,0-3.26,8.219c-.553,2.915-.022,4.668.75,5.114.8.463,2.742.024,5.1-2.036a27.209,27.209,0,0,0,5.227-6.79,27.6,27.6,0,0,0,3.181-7.776c.654-3.175.089-5.119-.713-5.581a2.327,2.327,0,0,0-1.868.089A10.194,10.194,0,0,0,17.5,6.9a27.464,27.464,0,0,0-5.4,6.849Z" style="fill:#00d8ff"></path><path d="M21.677,28.456c-1.355,0-3.076-.82-4.868-2.361a28.756,28.756,0,0,1-5.747-7.237h0a28.676,28.676,0,0,1-3.374-8.471,11.376,11.376,0,0,1-.158-4A3.391,3.391,0,0,1,8.964,3.9c1.487-.861,4.01.024,6.585,2.31a28.8,28.8,0,0,1,5.39,6.934,28.384,28.384,0,0,1,3.41,8.287,11.3,11.3,0,0,1,.137,4.146,3.543,3.543,0,0,1-1.494,2.555A2.59,2.59,0,0,1,21.677,28.456Zm-9.58-10.2a27.949,27.949,0,0,0,5.492,6.929c2.249,1.935,4.033,2.351,4.8,1.9.8-.465,1.39-2.363.782-5.434A27.212,27.212,0,0,0,19.9,13.74,27.6,27.6,0,0,0,14.755,7.1c-2.424-2.152-4.39-2.633-5.191-2.169a2.327,2.327,0,0,0-.855,1.662,10.194,10.194,0,0,0,.153,3.565,27.465,27.465,0,0,0,3.236,8.1Z" style="fill:#00d8ff"></path></g></svg>
+                                <p>React JS</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 2L3 7L5 24L16 30L27 24L29 7L16 2Z" fill="#DD0031"></path> <path d="M16 2V30L27 24L29 7L16 2Z" fill="#C3002F"></path> <path d="M15.9998 5.09375L7.87305 23.3638H10.9031L12.5368 19.2757H19.4348L21.0685 23.3638H24.0986L15.9998 5.09375ZM18.3736 16.7557H13.626L15.9998 11.0298L18.3736 16.7557Z" fill="white"></path> </g></svg>
+                                <p>AngularJS</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg fill="#000000" width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M23.749 30.005c-0.119 0.063-0.109 0.083 0.005 0.025 0.037-0.015 0.068-0.036 0.095-0.061 0-0.021 0-0.021-0.1 0.036zM23.989 29.875c-0.057 0.047-0.057 0.047 0.011 0.016 0.036-0.021 0.068-0.041 0.068-0.047 0-0.027-0.016-0.021-0.079 0.031zM24.145 29.781c-0.057 0.047-0.057 0.047 0.011 0.016 0.037-0.021 0.068-0.043 0.068-0.048 0-0.025-0.016-0.020-0.079 0.032zM24.303 29.688c-0.057 0.047-0.057 0.047 0.009 0.015 0.037-0.020 0.068-0.041 0.068-0.047 0-0.025-0.016-0.020-0.077 0.032zM24.516 29.547c-0.109 0.073-0.147 0.12-0.047 0.068 0.067-0.041 0.181-0.131 0.161-0.131-0.043 0.016-0.079 0.043-0.115 0.063zM14.953 0.011c-0.073 0.005-0.292 0.025-0.484 0.041-4.548 0.412-8.803 2.86-11.5 6.631-1.491 2.067-2.459 4.468-2.824 6.989-0.129 0.88-0.145 1.14-0.145 2.333 0 1.192 0.016 1.448 0.145 2.328 0.871 6.011 5.147 11.057 10.943 12.927 1.043 0.333 2.136 0.563 3.381 0.704 0.484 0.052 2.577 0.052 3.061 0 2.152-0.24 3.969-0.771 5.767-1.688 0.276-0.14 0.328-0.177 0.291-0.208-0.88-1.161-1.744-2.323-2.609-3.495l-2.557-3.453-3.203-4.745c-1.068-1.588-2.14-3.172-3.229-4.744-0.011 0-0.025 2.109-0.031 4.681-0.011 4.505-0.011 4.688-0.068 4.792-0.057 0.125-0.151 0.229-0.276 0.287-0.099 0.047-0.188 0.057-0.661 0.057h-0.541l-0.141-0.088c-0.088-0.057-0.161-0.136-0.208-0.229l-0.068-0.141 0.005-6.271 0.011-6.271 0.099-0.125c0.063-0.077 0.141-0.14 0.229-0.187 0.131-0.063 0.183-0.073 0.724-0.073 0.635 0 0.74 0.025 0.907 0.208 1.296 1.932 2.588 3.869 3.859 5.812 2.079 3.152 4.917 7.453 6.312 9.563l2.537 3.839 0.125-0.083c1.219-0.813 2.328-1.781 3.285-2.885 2.016-2.308 3.324-5.147 3.767-8.177 0.129-0.88 0.145-1.141 0.145-2.333 0-1.193-0.016-1.448-0.145-2.328-0.871-6.011-5.147-11.057-10.943-12.928-1.084-0.343-2.199-0.577-3.328-0.697-0.303-0.031-2.371-0.068-2.631-0.041zM21.5 9.688c0.151 0.072 0.265 0.208 0.317 0.364 0.027 0.084 0.032 1.823 0.027 5.74l-0.011 5.624-0.989-1.52-0.995-1.521v-4.083c0-2.647 0.011-4.131 0.025-4.204 0.047-0.167 0.161-0.307 0.313-0.395 0.124-0.063 0.172-0.068 0.667-0.068 0.463 0 0.541 0.005 0.645 0.063z"></path> </g></svg>
+                                <p>Next js</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="flex flex-col gap-5 justify-center items-center border border-[#0F0E0E1A] dark:border-[#f8fafc0f] p-5 rounded-2xl">
+                        <h2 class="text-2xl dark:text-white font-semibold">Back End</h2>
+                        <div class="flex flex-wrap gap-3 justify-center">
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M17.1725 2.29872C16.4627 1.89953 15.5373 1.90132 14.8269 2.29872C11.2689 4.26227 7.71082 6.22641 4.15216 8.18906C3.45969 8.55335 2.99264 9.29698 3.00009 10.0688V21.9328C2.99509 22.7197 3.48622 23.4705 4.19655 23.8298C5.21871 24.3736 6.2118 24.9726 7.25244 25.4802C8.45451 26.0709 9.95843 26.2015 11.1752 25.5855C12.1629 25.075 12.6016 23.9395 12.6003 22.896C12.6083 18.9806 12.6016 15.0651 12.6034 11.1496C12.6269 10.9756 12.4962 10.7896 12.3064 10.7938C11.8517 10.7866 11.3964 10.7896 10.9417 10.7926C10.7699 10.7764 10.6022 10.9191 10.6152 11.0918C10.6091 14.982 10.6164 18.8734 10.6115 22.7642C10.6214 23.3024 10.2578 23.8196 9.73913 24.0014C8.5412 24.4213 5.12198 22.2012 5.12198 22.2012C4.9965 22.1431 4.91682 22.007 4.92912 21.8718C4.92912 17.9576 4.92973 14.0433 4.92912 10.1297C4.91187 9.97191 5.00912 9.8298 5.15402 9.76538C8.70033 7.8134 12.2448 5.85654 15.7911 3.90336C15.9143 3.82115 16.086 3.8214 16.2089 3.90396C19.7552 5.85654 23.3003 7.81161 26.8472 9.76368C26.9926 9.828 27.0857 9.9725 27.0709 10.1297C27.0703 14.0433 27.0721 17.9576 27.0697 21.8713C27.0802 22.0098 27.0086 22.144 26.8793 22.2048C23.3661 24.1462 19.8129 26.025 16.3315 28.0228C16.1796 28.1099 16.0075 28.2086 15.8373 28.1126C14.9218 27.6062 14.0174 27.0801 13.1049 26.5688C13.0057 26.5069 12.8794 26.4803 12.7759 26.5496C12.3668 26.7652 11.982 26.9398 11.5122 27.1258C10.8524 27.387 10.9578 27.4938 11.5529 27.8405C12.62 28.4444 13.6889 29.0459 14.756 29.6504C15.4585 30.0888 16.4024 30.12 17.1275 29.7149C20.6861 27.7538 24.2436 25.7904 27.8029 23.8293C28.5113 23.468 29.0049 22.7202 28.9999 21.9327V10.0688C29.0068 9.31264 28.5576 8.58227 27.886 8.21259C24.3156 6.23947 20.7435 4.27064 17.1725 2.29872Z" fill="#8CC84B"></path> <path d="M22.5419 11.2062C21.1452 10.459 19.4836 10.4192 17.9315 10.5169C16.8102 10.6277 15.6309 10.9371 14.814 11.7409C13.9761 12.5489 13.7937 13.8537 14.1917 14.9085C14.4769 15.6539 15.1948 16.1386 15.9372 16.395C16.8935 16.7326 17.8979 16.837 18.9026 16.9414C19.819 17.0366 20.7357 17.1319 21.6165 17.4042C21.9763 17.5234 22.3953 17.7058 22.5055 18.0973C22.6073 18.5609 22.4957 19.0998 22.1193 19.4219C20.9237 20.3682 17.5979 20.2232 16.4166 19.4784C15.939 19.1611 15.7332 18.5994 15.6495 18.0641C15.6402 17.8973 15.5059 17.7443 15.3248 17.757C14.8713 17.7516 14.4178 17.7528 13.9643 17.7564C13.8061 17.7431 13.6416 17.8557 13.6329 18.0172C13.5397 20.4689 15.7914 21.5377 17.9039 21.773C19.1108 21.888 20.3442 21.8814 21.5327 21.6224C22.4261 21.419 23.3219 21.0444 23.9369 20.3563C24.6953 19.52 24.8444 18.2749 24.5043 17.2332C24.2443 16.4559 23.5012 15.9573 22.7416 15.7008C21.7086 15.3466 20.4844 15.1562 19.5488 15.0671C18.1889 14.9376 16.5729 14.9905 16.188 14.0969C16.0345 13.629 16.1651 13.048 16.5951 12.7602C17.7328 11.9885 20.0483 12.091 21.2265 12.6675C21.7675 12.9384 22.081 13.4948 22.2104 14.0565C22.2344 14.2215 22.3454 14.3937 22.5364 14.3865C22.9868 14.3955 23.4372 14.3889 23.8875 14.3895C24.0422 14.4003 24.2116 14.313 24.2418 14.1546C24.2227 12.9806 23.6232 11.7788 22.5419 11.2062Z" fill="#8CC84B"></path> </g></svg>
+                                <p>Node JS</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="512" cy="512" r="512" style="fill:#13aa52"></circle> <path d="M648.86 449.44c-32.34-142.73-108.77-189.66-117-207.59-9-12.65-18.12-35.15-18.12-35.15-.15-.38-.39-1.05-.67-1.7-.93 12.65-1.41 17.53-13.37 30.29-18.52 14.48-113.54 94.21-121.27 256.37-7.21 151.24 109.25 241.36 125 252.85l1.79 1.27v-.11c.1.76 5 36 8.44 73.34H526a726.68 726.68 0 0 1 13-78.53l1-.65a204.48 204.48 0 0 0 20.11-16.45l.72-.65c33.48-30.93 93.67-102.47 93.08-216.53a347.07 347.07 0 0 0-5.05-56.76zM512.35 659.12s0-212.12 7-212.08c5.46 0 12.53 273.61 12.53 273.61-9.72-1.17-19.53-45.03-19.53-61.53z" style="fill:#fff"></path> </g></svg>
+                                <p>Mongodb</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_firebase</title><path d="M5.8,24.6l.17-.237L13.99,9.149l.017-.161L10.472,2.348a.656.656,0,0,0-1.227.207Z" style="fill:#ffc24a"></path><path d="M5.9,24.42l.128-.25L13.965,9.114,10.439,2.448a.6.6,0,0,0-1.133.206Z" style="fill:#ffa712"></path><path d="M16.584,14.01l2.632-2.7L16.583,6.289a.678.678,0,0,0-1.195,0L13.981,8.971V9.2Z" style="fill:#f4bd62"></path><path d="M16.537,13.9l2.559-2.62L16.537,6.4a.589.589,0,0,0-1.074-.047L14.049,9.082l-.042.139Z" style="fill:#ffa50e"></path><polygon points="5.802 24.601 5.879 24.523 6.158 24.41 16.418 14.188 16.548 13.834 13.989 8.956 5.802 24.601" style="fill:#f6820c"></polygon><path d="M16.912,29.756,26.2,24.577,23.546,8.246A.635.635,0,0,0,22.471,7.9L5.8,24.6l9.233,5.155a1.927,1.927,0,0,0,1.878,0" style="fill:#fde068"></path><path d="M26.115,24.534,23.483,8.326a.557.557,0,0,0-.967-.353L5.9,24.569l9.131,5.1a1.912,1.912,0,0,0,1.863,0Z" style="fill:#fcca3f"></path><path d="M16.912,29.6a1.927,1.927,0,0,1-1.878,0L5.876,24.522,5.8,24.6l9.233,5.155a1.927,1.927,0,0,0,1.878,0L26.2,24.577l-.023-.14Z" style="fill:#eeab37"></path></g></svg>
+                                <p>Firebase</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_django</title><path d="M14.135,4H18.1V22.169a26.218,26.218,0,0,1-5.143.535c-4.842-.005-7.362-2.168-7.362-6.322,0-4,2.673-6.6,6.816-6.6a6.448,6.448,0,0,1,1.724.2V4Zm0,9.142a3.992,3.992,0,0,0-1.337-.2c-2,0-3.163,1.223-3.163,3.366,0,2.087,1.107,3.239,3.138,3.239a9.355,9.355,0,0,0,1.362-.1v-6.3Z" style="fill:#44b78b"></path><path d="M24.4,10.059v9.1c0,3.133-.235,4.639-.923,5.938A6.316,6.316,0,0,1,20.237,28l-3.678-1.733A5.708,5.708,0,0,0,19.7,23.638c.566-1.121.745-2.42.745-5.837V10.059Z" style="fill:#44b78b"></path><rect x="20.441" y="4.02" width="3.964" height="4.028" style="fill:#44b78b"></rect></g></svg>
+                                <p>Django</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_mysql</title><path d="M8.785,6.865a3.055,3.055,0,0,0-.785.1V7h.038a6.461,6.461,0,0,0,.612.785c.154.306.288.611.441.917.019-.019.038-.039.038-.039a1.074,1.074,0,0,0,.4-.957,4.314,4.314,0,0,1-.23-.4c-.115-.191-.364-.287-.517-.44" style="fill:#5d87a1;fill-rule:evenodd"></path><path d="M27.78,23.553a8.849,8.849,0,0,0-3.712.536c-.287.115-.745.115-.785.478.154.153.172.4.307.613a4.467,4.467,0,0,0,.995,1.167c.4.306.8.611,1.225.879.745.461,1.588.728,2.314,1.187.422.268.842.612,1.264.9.21.153.343.4.611.5v-.058a3.844,3.844,0,0,0-.291-.613c-.191-.19-.383-.363-.575-.554a9.118,9.118,0,0,0-1.99-1.932c-.613-.422-1.953-1-2.2-1.7l-.039-.039a7.69,7.69,0,0,0,1.321-.308c.65-.172,1.243-.133,1.912-.3.307-.077.862-.268.862-.268v-.3c-.342-.34-.587-.795-.947-1.116a25.338,25.338,0,0,0-3.122-2.328c-.587-.379-1.344-.623-1.969-.946-.226-.114-.6-.17-.737-.36a7.594,7.594,0,0,1-.776-1.457c-.548-1.04-1.079-2.193-1.551-3.293a20.236,20.236,0,0,0-.965-2.157A19.078,19.078,0,0,0,11.609,5a9.07,9.07,0,0,0-2.421-.776c-.474-.02-.946-.057-1.419-.075A7.55,7.55,0,0,1,6.9,3.485C5.818,2.8,3.038,1.328,2.242,3.277,1.732,4.508,3,5.718,3.435,6.343A8.866,8.866,0,0,1,4.4,7.762c.133.322.171.663.3,1A22.556,22.556,0,0,0,5.687,11.3a8.946,8.946,0,0,0,.7,1.172c.153.209.417.3.474.645a5.421,5.421,0,0,0-.436,1.419,8.336,8.336,0,0,0,.549,6.358c.3.473,1.022,1.514,1.987,1.116.851-.34.662-1.419.908-2.364.056-.229.019-.379.132-.53V19.3s.483,1.061.723,1.6a10.813,10.813,0,0,0,2.4,2.59A3.514,3.514,0,0,1,14,24.657V25h.427A1.054,1.054,0,0,0,14,24.212a9.4,9.4,0,0,1-.959-1.16,24.992,24.992,0,0,1-2.064-3.519c-.3-.6-.553-1.258-.793-1.857-.11-.231-.11-.58-.295-.7a7.266,7.266,0,0,0-.884,1.313,11.419,11.419,0,0,0-.517,2.921c-.073.02-.037,0-.073.038-.589-.155-.792-.792-1.014-1.332a8.756,8.756,0,0,1-.166-5.164c.128-.405.683-1.681.461-2.068-.111-.369-.48-.58-.682-.871a7.767,7.767,0,0,1-.663-1.237C5.912,9.5,5.69,8.3,5.212,7.216a10.4,10.4,0,0,0-.921-1.489A9.586,9.586,0,0,1,3.276,4.22c-.092-.213-.221-.561-.074-.793a.3.3,0,0,1,.259-.252c.238-.212.921.058,1.16.174a9.2,9.2,0,0,1,1.824.967c.258.194.866.685.866.685h.18c.612.133,1.3.037,1.876.21a12.247,12.247,0,0,1,2.755,1.32,16.981,16.981,0,0,1,5.969,6.545c.23.439.327.842.537,1.3.4.94.9,1.9,1.3,2.814a12.578,12.578,0,0,0,1.36,2.564c.286.4,1.435.612,1.952.822a13.7,13.7,0,0,1,1.32.535c.651.4,1.3.861,1.913,1.3.305.23,1.262.708,1.32,1.091" style="fill:#00758f;fill-rule:evenodd"></path></g></svg>
+                                <p>MySQL</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="-4 0 264 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M255.855641,59.619717 C255.950565,59.9710596 256,60.3333149 256,60.6972536 L256,117.265345 C256,118.743206 255.209409,120.108149 253.927418,120.843385 L206.448786,148.178786 L206.448786,202.359798 C206.448786,203.834322 205.665123,205.195421 204.386515,205.937838 L105.27893,262.990563 C105.05208,263.119455 104.804608,263.201946 104.557135,263.289593 C104.464333,263.320527 104.376687,263.377239 104.278729,263.403017 C103.585929,263.58546 102.857701,263.58546 102.164901,263.403017 C102.051476,263.372083 101.948363,263.310215 101.840093,263.26897 C101.613244,263.186479 101.376082,263.1143 101.159544,262.990563 L2.07258227,205.937838 C0.7913718,205.201819 0,203.837372 0,202.359798 L0,32.6555248 C0,32.2843161 0.0515567729,31.9234187 0.144358964,31.5728326 C0.175293028,31.454252 0.24747251,31.3459828 0.288717928,31.2274022 C0.366053087,31.0108638 0.438232569,30.7891697 0.55165747,30.5880982 C0.628992629,30.4540506 0.742417529,30.3457814 0.83521972,30.2220451 C0.953800298,30.0570635 1.06206952,29.8869261 1.20127281,29.7425672 C1.31985339,29.6239866 1.4745237,29.5363401 1.60857131,29.4332265 C1.75808595,29.3094903 1.89213356,29.1754427 2.06227091,29.0774848 L2.06742659,29.0774848 L51.6134853,0.551122364 C52.8901903,-0.183535768 54.4613221,-0.183535768 55.7380271,0.551122364 L105.284086,29.0774848 L105.294397,29.0774848 C105.459379,29.1805983 105.598582,29.3094903 105.748097,29.4280708 C105.882144,29.5311844 106.031659,29.6239866 106.15024,29.7374115 C106.294599,29.8869261 106.397712,30.0570635 106.521448,30.2220451 C106.609095,30.3457814 106.727676,30.4540506 106.799855,30.5880982 C106.918436,30.7943253 106.985459,31.0108638 107.06795,31.2274022 C107.109196,31.3459828 107.181375,31.454252 107.212309,31.5779883 C107.307234,31.9293308 107.355765,32.2915861 107.356668,32.6555248 L107.356668,138.651094 L148.643332,114.878266 L148.643332,60.6920979 C148.643332,60.3312005 148.694889,59.9651474 148.787691,59.619717 C148.823781,59.4959808 148.890804,59.3877116 148.93205,59.269131 C149.014541,59.0525925 149.08672,58.8308984 149.200145,58.629827 C149.27748,58.4957794 149.390905,58.3875102 149.478552,58.2637739 C149.602288,58.0987922 149.705401,57.9286549 149.84976,57.7842959 C149.968341,57.6657153 150.117856,57.5780688 150.251903,57.4749553 C150.406573,57.351219 150.540621,57.2171714 150.705603,57.1192136 L150.710758,57.1192136 L200.261973,28.5928511 C201.538395,27.8571345 203.110093,27.8571345 204.386515,28.5928511 L253.932573,57.1192136 C254.107866,57.2223271 254.241914,57.351219 254.396584,57.4697996 C254.525476,57.5729132 254.674991,57.6657153 254.793572,57.7791402 C254.93793,57.9286549 255.041044,58.0987922 255.16478,58.2637739 C255.257582,58.3875102 255.371007,58.4957794 255.443187,58.629827 C255.561767,58.8308984 255.628791,59.0525925 255.711282,59.269131 C255.757683,59.3877116 255.824707,59.4959808 255.855641,59.619717 Z M247.740605,114.878266 L247.740605,67.8378666 L230.402062,77.8192579 L206.448786,91.6106946 L206.448786,138.651094 L247.745761,114.878266 L247.740605,114.878266 Z M198.194546,199.97272 L198.194546,152.901386 L174.633101,166.357704 L107.351512,204.757188 L107.351512,252.27191 L198.194546,199.97272 Z M8.25939501,39.7961379 L8.25939501,199.97272 L99.0921175,252.266755 L99.0921175,204.762344 L51.6392637,177.906421 L51.6237967,177.89611 L51.603174,177.885798 C51.443348,177.792996 51.3093004,177.658949 51.1597857,177.545524 C51.0308938,177.44241 50.8813791,177.359919 50.7679542,177.246494 L50.7576429,177.231027 C50.6235953,177.102135 50.5307931,176.942309 50.4173682,176.79795 C50.3142546,176.658747 50.1905184,176.540167 50.1080276,176.395808 L50.1028719,176.380341 C50.0100697,176.22567 49.9533572,176.040066 49.8863334,175.864773 C49.8193096,175.710103 49.7316631,175.565744 49.6904177,175.400762 L49.6904177,175.395606 C49.6388609,175.19969 49.6285496,174.993463 49.6079269,174.792392 C49.5873041,174.637722 49.5460587,174.483051 49.5460587,174.328381 L49.5460587,174.31807 L49.5460587,63.5689658 L25.5979377,49.7723734 L8.25939501,39.8012935 L8.25939501,39.7961379 Z M53.6809119,8.89300821 L12.3994039,32.6555248 L53.6706006,56.4180414 L94.9469529,32.6503692 L53.6706006,8.89300821 L53.6809119,8.89300821 Z M75.1491521,157.19091 L99.0972731,143.404629 L99.0972731,39.7961379 L81.7587304,49.7775291 L57.8054537,63.5689658 L57.8054537,167.177457 L75.1491521,157.19091 Z M202.324244,36.934737 L161.047891,60.6972536 L202.324244,84.4597702 L243.59544,60.6920979 L202.324244,36.934737 Z M198.194546,91.6106946 L174.24127,77.8192579 L156.902727,67.8378666 L156.902727,114.878266 L180.850848,128.664547 L198.194546,138.651094 L198.194546,91.6106946 Z M103.216659,197.616575 L163.759778,163.052915 L194.023603,145.781396 L152.778185,122.034346 L105.289242,149.374903 L62.0073307,174.292291 L103.216659,197.616575 Z" fill="#FF2D20"> </path> </g> </g></svg>
+                                <p>Laravel</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg fill="#318d45" width="32px" height="32px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#318d45"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M20.205 16.392c-2.469 3.289-7.741 2.179-11.122 2.338 0 0-.599.034-1.201.133 0 0 .228-.097.519-.198 2.374-.821 3.496-.986 4.939-1.727 2.71-1.388 5.408-4.413 5.957-7.555-1.032 3.022-4.17 5.623-7.027 6.679-1.955.722-5.492 1.424-5.493 1.424a5.28 5.28 0 0 1-.143-.076c-2.405-1.17-2.475-6.38 1.894-8.059 1.916-.736 3.747-.332 5.818-.825 2.208-.525 4.766-2.18 5.805-4.344 1.165 3.458 2.565 8.866.054 12.21zm.042-13.28a9.212 9.212 0 0 1-1.065 1.89 9.982 9.982 0 0 0-7.167-3.031C6.492 1.971 2 6.463 2 11.985a9.983 9.983 0 0 0 3.205 7.334l.22.194a.856.856 0 1 1 .001.001l.149.132A9.96 9.96 0 0 0 12.015 22c5.278 0 9.613-4.108 9.984-9.292.274-2.539-.476-5.763-1.752-9.596"></path></g></svg>
+                                <p>Spring Boot</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="16" cy="16" r="14" fill="#8892BF"></circle> <path d="M14.4392 10H16.1192L15.6444 12.5242H17.154C17.9819 12.5419 18.5986 12.7269 19.0045 13.0793C19.4184 13.4316 19.5402 14.1014 19.3698 15.0881L18.5541 19.4889H16.8497L17.6288 15.2863C17.7099 14.8457 17.6856 14.533 17.5558 14.348C17.426 14.163 17.146 14.0705 16.7158 14.0705L15.3644 14.0573L14.3661 19.4889H12.6861L14.4392 10Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M6.74092 12.5243H10.0036C10.9612 12.533 11.6552 12.8327 12.0854 13.4229C12.5156 14.0132 12.6576 14.8193 12.5115 15.8414C12.4548 16.3085 12.3289 16.7665 12.1341 17.2159C11.9474 17.6652 11.6878 18.0704 11.355 18.4317C10.9491 18.8898 10.5149 19.1805 10.0523 19.304C9.58969 19.4274 9.11076 19.489 8.61575 19.489H7.15484L6.69222 22H5L6.74092 12.5243ZM7.43485 17.9956L8.16287 14.0441H8.40879C8.49815 14.0441 8.5914 14.0396 8.6888 14.0309C9.33817 14.0221 9.87774 14.0882 10.308 14.2291C10.7462 14.37 10.8923 14.9031 10.7462 15.8282C10.5678 16.9296 10.2186 17.5727 9.69926 17.7577C9.1799 17.934 8.53053 18.0176 7.75138 18.0088H7.58094C7.53224 18.0088 7.48355 18.0043 7.43485 17.9956Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M24.4365 12.5243H21.1738L19.4329 22H21.1251L21.5878 19.489H23.0487C23.5437 19.489 24.0226 19.4274 24.4852 19.304C24.9479 19.1805 25.382 18.8898 25.7879 18.4317C26.1207 18.0704 26.3803 17.6652 26.567 17.2159C26.7618 16.7665 26.8877 16.3085 26.9444 15.8414C27.0905 14.8193 26.9486 14.0132 26.5183 13.4229C26.0881 12.8327 25.3942 12.533 24.4365 12.5243ZM22.5958 14.0441L21.8678 17.9956C21.9165 18.0043 21.9652 18.0088 22.0139 18.0088H22.1843C22.9635 18.0176 23.6128 17.934 24.1322 17.7577C24.6515 17.5727 25.0007 16.9296 25.1792 15.8282C25.3253 14.9031 25.1792 14.37 24.7409 14.2291C24.3107 14.0882 23.7711 14.0221 23.1217 14.0309C23.0243 14.0396 22.9311 14.0441 22.8417 14.0441H22.5958Z" fill="white"></path> </g></svg>
+                                <p>PHP</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="lg:col-span-2 flex flex-col gap-5 justify-center items-center border border-[#0F0E0E1A] dark:border-[#f8fafc0f] p-5 rounded-2xl">
+                        <h2 class="text-2xl dark:text-white font-semibold">Other Tools</h2>
+                        <div class="flex flex-wrap gap-3 justify-center">
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 -0.5 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Github-color</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Color-" transform="translate(-700.000000, -560.000000)" fill="#3E75C3"> <path d="M723.9985,560 C710.746,560 700,570.787092 700,584.096644 C700,594.740671 706.876,603.77183 716.4145,606.958412 C717.6145,607.179786 718.0525,606.435849 718.0525,605.797328 C718.0525,605.225068 718.0315,603.710086 718.0195,601.699648 C711.343,603.155898 709.9345,598.469394 709.9345,598.469394 C708.844,595.686405 707.2705,594.94548 707.2705,594.94548 C705.091,593.450075 707.4355,593.480194 707.4355,593.480194 C709.843,593.650366 711.1105,595.963499 711.1105,595.963499 C713.2525,599.645538 716.728,598.58234 718.096,597.964902 C718.3135,596.407754 718.9345,595.346062 719.62,594.743683 C714.2905,594.135281 708.688,592.069123 708.688,582.836167 C708.688,580.205279 709.6225,578.054788 711.1585,576.369634 C710.911,575.759726 710.0875,573.311058 711.3925,569.993458 C711.3925,569.993458 713.4085,569.345902 717.9925,572.46321 C719.908,571.928599 721.96,571.662047 724.0015,571.651505 C726.04,571.662047 728.0935,571.928599 730.0105,572.46321 C734.5915,569.345902 736.603,569.993458 736.603,569.993458 C737.9125,573.311058 737.089,575.759726 736.8415,576.369634 C738.3805,578.054788 739.309,580.205279 739.309,582.836167 C739.309,592.091712 733.6975,594.129257 728.3515,594.725612 C729.2125,595.469549 729.9805,596.939353 729.9805,599.18773 C729.9805,602.408949 729.9505,605.006706 729.9505,605.797328 C729.9505,606.441873 730.3825,607.191834 731.6005,606.9554 C741.13,603.762794 748,594.737659 748,584.096644 C748,570.787092 737.254,560 723.9985,560" id="Github"> </path> </g> </g> </g></svg>
+                                <p>GitHub</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2.58536 17.4132C1.80488 16.6327 1.80488 15.3673 2.58536 14.5868L14.5868 2.58536C15.3673 1.80488 16.6327 1.80488 17.4132 2.58536L29.4146 14.5868C30.1951 15.3673 30.1951 16.6327 29.4146 17.4132L17.4132 29.4146C16.6327 30.1951 15.3673 30.1951 14.5868 29.4146L2.58536 17.4132Z" fill="#EE513B"></path> <path d="M12.1489 5.06152L10.9336 6.27686L14.0725 9.41577C13.9455 9.68819 13.8746 9.99201 13.8746 10.3124C13.8746 11.222 14.4461 11.9981 15.2496 12.3012V19.9798C14.4461 20.2829 13.8746 21.059 13.8746 21.9686C13.8746 23.1422 14.826 24.0936 15.9996 24.0936C17.1732 24.0936 18.1246 23.1422 18.1246 21.9686C18.1246 21.144 17.6549 20.429 16.9684 20.0768V12.3117L19.9689 15.3122C19.8481 15.5791 19.7809 15.8754 19.7809 16.1874C19.7809 17.361 20.7323 18.3124 21.9059 18.3124C23.0795 18.3124 24.0309 17.361 24.0309 16.1874C24.0309 15.0138 23.0795 14.0624 21.9059 14.0624C21.6778 14.0624 21.4582 14.0983 21.2522 14.1648L18.0297 10.9423C18.0914 10.7433 18.1246 10.5317 18.1246 10.3124C18.1246 9.13878 17.1732 8.18738 15.9996 8.18738C15.7803 8.18738 15.5688 8.22061 15.3697 8.2823L12.1489 5.06152Z" fill="white"></path> </g></svg>
+                                <p>Git</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 -1 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <path d="M180.82764,252.605272 C184.843951,254.170159 189.42406,254.069552 193.478224,252.11917 L245.979142,226.856851 C251.495593,224.202221 255.003889,218.618034 255.003889,212.49296 L255.003889,41.1971845 C255.003889,35.0719113 251.495593,29.4886211 245.979142,26.8339907 L193.478224,1.57068551 C188.158006,-0.989256713 181.931329,-0.362230036 177.262566,3.0323459 C176.595173,3.51727166 175.959655,4.05869672 175.363982,4.65536598 L74.8565893,96.3498444 L31.0778002,63.1181557 C27.0024197,60.0246398 21.3020866,60.2780499 17.5170718,63.7211005 L3.47578059,76.4937075 C-1.15402423,80.7052561 -1.15933349,87.9889043 3.46431538,92.2072265 L41.430759,126.844525 L3.46431538,161.482221 C-1.15933349,165.700742 -1.15402423,172.984291 3.47578059,177.19584 L17.5170718,189.967949 C21.3020866,193.411497 27.0024197,193.664509 31.0778002,190.571591 L74.8565893,157.339404 L175.363982,249.034221 C176.953772,250.625007 178.82048,251.823326 180.82764,252.605272 Z M191.291764,68.9559518 L115.029663,126.844525 L191.291764,184.733396 L191.291764,68.9559518 Z" id="path-1"> </path> <linearGradient x1="50.0000484%" y1="-3.91645412e-07%" x2="50.0000484%" y2="99.999921%" id="linearGradient-3"> <stop stop-color="#FFFFFF" offset="0%"> </stop> <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"> </stop> </linearGradient> </defs> <g> <mask id="mask-2" fill="white"> <use xlink:href="#path-1"> </use> </mask> <g> </g> <path d="M246.134784,26.873337 L193.593025,1.57523773 C187.51178,-1.35300582 180.243173,-0.117807811 175.469819,4.65514684 L3.46641717,161.482221 C-1.16004072,165.700742 -1.1547215,172.984291 3.47789235,177.19584 L17.5276804,189.967949 C21.3150858,193.411497 27.0189053,193.664509 31.0966765,190.571591 L238.228667,33.4363005 C245.177523,28.1646927 255.158535,33.1209324 255.158535,41.8432608 L255.158535,41.2332436 C255.158535,35.11066 251.651235,29.5293619 246.134784,26.873337 Z" fill="#0065A9" fill-rule="nonzero" mask="url(#mask-2)"> </path> <path d="M246.134784,226.816011 L193.593025,252.11419 C187.51178,255.041754 180.243173,253.806579 175.469819,249.034221 L3.46641717,92.2070273 C-1.16004072,87.9888047 -1.1547215,80.7049573 3.47789235,76.4935082 L17.5276804,63.7209012 C21.3150858,60.2778506 27.0189053,60.0243409 31.0966765,63.1179565 L238.228667,220.252649 C245.177523,225.524058 255.158535,220.568416 255.158535,211.84549 L255.158535,212.456104 C255.158535,218.57819 251.651235,224.159388 246.134784,226.816011 Z" fill="#007ACC" fill-rule="nonzero" mask="url(#mask-2)"> </path> <path d="M193.428324,252.134497 C187.345086,255.060069 180.076479,253.823898 175.303125,249.050544 C181.184153,254.931571 191.240868,250.765843 191.240868,242.448334 L191.240868,11.2729623 C191.240868,2.95542269 181.184153,-1.21005093 175.303125,4.67135981 C180.076479,-0.102038107 187.345086,-1.3389793 193.428324,1.58667934 L245.961117,26.8500144 C251.481553,29.5046448 254.991841,35.0879351 254.991841,41.2132082 L254.991841,212.509283 C254.991841,218.634357 251.481553,224.217548 245.961117,226.872178 L193.428324,252.134497 Z" fill="#1F9CF0" fill-rule="nonzero" mask="url(#mask-2)"> </path> <path d="M180.827889,252.605272 C184.8442,254.169163 189.424309,254.069552 193.477476,252.11917 L245.978395,226.855855 C251.495842,224.201225 255.004138,218.618034 255.004138,212.49296 L255.004138,41.1969853 C255.004138,35.0717121 251.495842,29.4884219 245.979391,26.8337915 L193.477476,1.57052613 C188.158255,-0.989423064 181.931578,-0.362396387 177.261819,3.03217656 C176.595422,3.51710232 175.959904,4.05852738 175.363235,4.65519664 L74.8565395,96.3496452 L31.0777504,63.1179565 C27.0024695,60.0244405 21.3020368,60.2779503 17.517022,63.7209012 L3.4757806,76.4935082 C-1.15402423,80.7050569 -1.15933349,87.9888047 3.46431539,92.2071269 L41.4308088,126.844525 L3.46431539,161.482221 C-1.15933349,165.700742 -1.15402423,172.984291 3.4757806,177.19584 L17.517022,189.967949 C21.3020368,193.411497 27.0024695,193.664509 31.0777504,190.571591 L74.8565395,157.339404 L175.363235,249.034221 C176.953025,250.625007 178.820729,251.823326 180.827889,252.605272 Z M191.292013,68.9557526 L115.029912,126.844525 L191.292013,184.733396 L191.292013,68.9557526 Z" fill-opacity="0.25" fill="url(#linearGradient-3)" mask="url(#mask-2)"> </path> </g> </g></svg>
+                                <p>Vs Code</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#1ABCFE" d="M8.55 8c0-1.289 1.019-2.333 2.275-2.333C12.082 5.667 13.1 6.71 13.1 8c0 1.289-1.018 2.333-2.275 2.333C9.57 10.333 8.55 9.29 8.55 8z"></path><path fill="#0ACF83" d="M4 12.667c0-1.289 1.019-2.334 2.275-2.334H8.55v2.334C8.55 13.955 7.531 15 6.275 15S4 13.955 4 12.667z"></path><path fill="#FF7262" d="M8.55 1v4.667h2.275c1.257 0 2.275-1.045 2.275-2.334C13.1 2.045 12.082 1 10.825 1H8.55z"></path><path fill="#F24E1E" d="M4 3.333c0 1.289 1.019 2.334 2.275 2.334H8.55V1H6.275C5.019 1 4 2.045 4 3.333z"></path><path fill="#A259FF" d="M4 8c0 1.289 1.019 2.333 2.275 2.333H8.55V5.667H6.275C5.019 5.667 4 6.71 4 8z"></path></g></svg>
+                                <p>Figma</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <radialGradient id="a" cy="0%" r="100.11%" fx="50%" fy="0%" gradientTransform="matrix(0 .9989 -1.152 0 .5 -.5)"> <stop offset="0%" stop-color="#20C6B7"></stop> <stop offset="100%" stop-color="#4D9ABF"></stop> </radialGradient> </defs> <path fill="url(#a)" d="M28.589 14.135l-.014-.006c-.008-.003-.016-.006-.023-.013a.11.11 0 0 1-.028-.093l.773-4.726 3.625 3.626-3.77 1.604a.083.083 0 0 1-.033.006h-.015c-.005-.003-.01-.007-.02-.017a1.716 1.716 0 0 0-.495-.381zm5.258-.288l3.876 3.876c.805.806 1.208 1.208 1.355 1.674.022.069.04.138.054.209l-9.263-3.923a.728.728 0 0 0-.015-.006c-.037-.015-.08-.032-.08-.07 0-.038.044-.056.081-.071l.012-.005 3.98-1.684zm5.127 7.003c-.2.376-.59.766-1.25 1.427l-4.37 4.369-5.652-1.177-.03-.006c-.05-.008-.103-.017-.103-.062a1.706 1.706 0 0 0-.655-1.193c-.023-.023-.017-.059-.01-.092 0-.005 0-.01.002-.014l1.063-6.526.004-.022c.006-.05.015-.108.06-.108a1.73 1.73 0 0 0 1.16-.665c.009-.01.015-.021.027-.027.032-.015.07 0 .103.014l9.65 4.082zm-6.625 6.801l-7.186 7.186 1.23-7.56.002-.01c.001-.01.003-.02.006-.029.01-.024.036-.034.061-.044l.012-.005a1.85 1.85 0 0 0 .695-.517c.024-.028.053-.055.09-.06a.09.09 0 0 1 .029 0l5.06 1.04zm-8.707 8.707l-.81.81-8.955-12.942a.424.424 0 0 0-.01-.014c-.014-.019-.029-.038-.026-.06.001-.016.011-.03.022-.042l.01-.013c.027-.04.05-.08.075-.123l.02-.035.003-.003c.014-.024.027-.047.051-.06.021-.01.05-.006.073-.001l9.921 2.046a.164.164 0 0 1 .076.033c.013.013.016.027.019.043a1.757 1.757 0 0 0 1.028 1.175c.028.014.016.045.003.078a.238.238 0 0 0-.015.045c-.125.76-1.197 7.298-1.485 9.063zm-1.692 1.691c-.597.591-.949.904-1.347 1.03a2 2 0 0 1-1.206 0c-.466-.148-.869-.55-1.674-1.356L8.73 28.73l2.349-3.643c.011-.018.022-.034.04-.047.025-.018.061-.01.091 0a2.434 2.434 0 0 0 1.638-.083c.027-.01.054-.017.075.002a.19.19 0 0 1 .028.032L21.95 38.05zM7.863 27.863L5.8 25.8l4.074-1.738a.084.084 0 0 1 .033-.007c.034 0 .054.034.072.065a2.91 2.91 0 0 0 .13.184l.013.016c.012.017.004.034-.008.05l-2.25 3.493zm-2.976-2.976l-2.61-2.61c-.444-.444-.766-.766-.99-1.043l7.936 1.646a.84.84 0 0 0 .03.005c.049.008.103.017.103.063 0 .05-.059.073-.109.092l-.023.01-4.337 1.837zM.831 19.892a2 2 0 0 1 .09-.495c.148-.466.55-.868 1.356-1.674l3.34-3.34a2175.525 2175.525 0 0 0 4.626 6.687c.027.036.057.076.026.106-.146.161-.292.337-.395.528a.16.16 0 0 1-.05.062c-.013.008-.027.005-.042.002H9.78L.831 19.891zm5.68-6.403l4.491-4.491c.422.185 1.958.834 3.332 1.414 1.04.44 1.988.84 2.286.97.03.012.057.024.07.054.008.018.004.041 0 .06a2.003 2.003 0 0 0 .523 1.828c.03.03 0 .073-.026.11l-.014.021-4.56 7.063c-.012.02-.023.037-.043.05-.024.015-.058.008-.086.001a2.274 2.274 0 0 0-.543-.074c-.164 0-.342.03-.522.063h-.001c-.02.003-.038.007-.054-.005a.21.21 0 0 1-.045-.051l-4.808-7.013zm5.398-5.398l5.814-5.814c.805-.805 1.208-1.208 1.674-1.355a2 2 0 0 1 1.206 0c.466.147.869.55 1.674 1.355l1.26 1.26-4.135 6.404a.155.155 0 0 1-.041.048c-.025.017-.06.01-.09 0a2.097 2.097 0 0 0-1.92.37c-.027.028-.067.012-.101-.003-.54-.235-4.74-2.01-5.341-2.265zm12.506-3.676l3.818 3.818-.92 5.698v.015a.135.135 0 0 1-.008.038c-.01.02-.03.024-.05.03a1.83 1.83 0 0 0-.548.273.154.154 0 0 0-.02.017c-.011.012-.022.023-.04.025a.114.114 0 0 1-.043-.007l-5.818-2.472-.011-.005c-.037-.015-.081-.033-.081-.071a2.198 2.198 0 0 0-.31-.915c-.028-.046-.059-.094-.035-.141l4.066-6.303zm-3.932 8.606l5.454 2.31c.03.014.063.027.076.058a.106.106 0 0 1 0 .057c-.016.08-.03.171-.03.263v.153c0 .038-.039.054-.075.069l-.011.004c-.864.369-12.13 5.173-12.147 5.173-.017 0-.035 0-.052-.017-.03-.03 0-.072.027-.11a.76.76 0 0 0 .014-.02l4.482-6.94.008-.012c.026-.042.056-.089.104-.089l.045.007c.102.014.192.027.283.027.68 0 1.31-.331 1.69-.897a.16.16 0 0 1 .034-.04c.027-.02.067-.01.098.004zm-6.246 9.185l12.28-5.237s.018 0 .035.017c.067.067.124.112.179.154l.027.017c.025.014.05.03.052.056 0 .01 0 .016-.002.025L25.756 23.7l-.004.026c-.007.05-.014.107-.061.107a1.729 1.729 0 0 0-1.373.847l-.005.008c-.014.023-.027.045-.05.057-.021.01-.048.006-.07.001l-9.793-2.02c-.01-.002-.152-.519-.163-.52z"></path> </g></svg>
+                                <p>Netlify</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 32 32" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M4.7434,22.505A12.9769,12.9769,0,0,0,14.88,28.949l5.8848-10.1927L16,16.0058,11.2385,18.755l-1.5875-2.75L8.4885,13.9919,5.3553,8.5649A12.9894,12.9894,0,0,0,4.7434,22.505Z" fill="#00ac47"></path><path d="M16,3.0072A12.9769,12.9769,0,0,0,5.3507,8.5636l5.8848,10.1927L16,16.0057V10.5072H27.766A12.99,12.99,0,0,0,16,3.0072Z" fill="#ea4435"></path><path d="M27.2557,22.505a12.9772,12.9772,0,0,0,.5124-12H15.9986v5.5011l4.7619,2.7492-1.5875,2.75-1.1625,2.0135-3.1333,5.4269A12.99,12.99,0,0,0,27.2557,22.505Z" fill="#ffba00"></path><circle cx="15.9995" cy="16.0072" fill="#ffffff" r="5.5"></circle><circle cx="15.9995" cy="16.0072" fill="#4285f4" r="4.25"></circle></g></svg>
+                                <p>Google Chrome</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="24" cy="24" r="20" fill="#47CF73"></circle> <path d="M35 27.4998L24 34.7998L13 27.4998V20.5002L24 13.2002L35 20.5002V27.4998Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                <p>Codepen</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="16" cy="16" r="14" fill="#0769AD"></circle> <path d="M22.6573 13.4211C23.9143 13.4211 25.0652 13.0019 25.955 12.3066C25.0312 13.5238 23.5007 14.3196 21.7689 14.3196C18.9477 14.3196 16.6607 12.2077 16.6607 9.60256C16.6607 8.1581 17.3638 6.86527 18.4712 6C17.8901 6.76568 17.5491 7.6981 17.5491 8.70407C17.5491 11.3092 19.8361 13.4211 22.6573 13.4211Z" fill="#78CFF5"></path> <path d="M25.9064 16.6586C24.5512 17.7216 22.7968 18.3628 20.8805 18.3628C16.5874 18.3628 13.1071 15.1447 13.1071 11.1749C13.1071 9.63522 13.6307 8.20859 14.5221 7.03894C12.8413 8.35742 11.7745 10.3248 11.7745 12.5226C11.7745 16.4924 15.2548 19.7106 19.5479 19.7106C22.176 19.7106 24.4994 18.5047 25.9064 16.6586Z" fill="#78CFF5"></path> <path d="M26 20.7701C24.0689 22.6129 21.3937 23.7538 18.4375 23.7538C12.5497 23.7538 7.77678 19.2283 7.77678 13.6458C7.77678 11.8768 8.25603 10.214 9.09813 8.76767C7.18322 10.595 6 13.1125 6 15.892C6 21.4745 10.7729 26 16.6607 26C20.6827 26 24.1846 23.8881 26 20.7701Z" fill="#78CFF5"></path> </g></svg>
+                                <p>jQuery</p>
+                            </div>
+                            <div class="flex items-center justify-center gap-2 dark:text-white border border-[#0F0E0E1A] dark:border-[#f8fafc0f] py-2 px-5 rounded-xl">
+                                <svg width="32px" height="32px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 23H32V28C32 29.1046 31.1046 30 30 30H10C8.89543 30 8 29.1046 8 28V23Z" fill="#5D29A1"></path> <rect x="8" y="16" width="24" height="7" fill="#7F32CC"></rect> <rect x="8" y="9" width="24" height="7" fill="#9A40D6"></rect> <path d="M10 2C8.89543 2 8 2.89543 8 4V28C8 29.1046 8.89543 30 10 30H24V9H32V4C32 2.89543 31.1046 2 30 2H10Z" fill="url(#paint0_linear_87_7733)"></path> <path d="M8 12C8 10.3431 9.34315 9 11 9H17C18.6569 9 20 10.3431 20 12V24C20 25.6569 18.6569 27 17 27H8V12Z" fill="#000000" fill-opacity="0.3"></path> <rect y="7" width="18" height="18" rx="2" fill="url(#paint1_linear_87_7733)"></rect> <path d="M13 21V11H10.8893V16.8286L6.9631 11H5V21H7.08118V14.9571L11.155 21H13Z" fill="white"></path> <defs> <linearGradient id="paint0_linear_87_7733" x1="8" y1="16" x2="24.5" y2="16" gradientUnits="userSpaceOnUse"> <stop stop-color="#8C42AC"></stop> <stop offset="1" stop-color="#C36DEF"></stop> </linearGradient> <linearGradient id="paint1_linear_87_7733" x1="0" y1="16" x2="19" y2="16" gradientUnits="userSpaceOnUse"> <stop stop-color="#44176C"></stop> <stop offset="1" stop-color="#621F9C"></stop> </linearGradient> </defs> </g></svg>
+                                <p>Onenote</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ’s Section -->
+        <section class="mb-[70px] xl:px-[100px] px-5">
+            <div class="max-w-[1400px] mx-auto">
+                <!-- FAQ Header -->
+                <div class="flex flex-col justify-center items-center gap-3 dark:text-white pb-10">
+                    <p class="uppercase text-[#797C86]">FAQ’s</p>
+                    <h2 class="text-2xl lg:text-4xl uppercase font-bold text-center bg-gradient-to-b from-gray-900 to-gray-600 text-transparent bg-clip-text dark:bg-gradient-to-r dark:from-purple-200 dark:to-purple-800">Frequently Asked Questions</h2>
+                </div>
+                <!-- FAQ Content -->
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="border-b border-[#0F0E0E1A] dark:border-[#f8fafc0f] pb-4">
+                        <input type="checkbox" id="faq1" class="hidden peer" checked />
+                        <label for="faq1" class="w-full text-left text-xl font-semibold dark:text-[#c3c4c9] cursor-pointer flex justify-between items-center peer-label">
+                            What areas of web development do you focus on?
+                            <span class="toggle-btn transform transition-transform duration-300">▼</span>
+                        </label>
+                        <div class="block mt-3 dark:text-[#d4d5d8] peer-checked:block hidden">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae eum asperiores, laudantium optio rerum fuga dolor perferendis aliquam facere excepturi quidem nostrum magnam numquam qui animi exercitationem modi tempore sint beatae laboriosam nihil cumque, nulla et! Dolorem odio totam veniam. Mollitia optio minima architecto fugiat temporibus culpa praesentium ut molestias?</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="border-b border-[#0F0E0E1A] dark:border-[#f8fafc0f] pb-4">
+                        <input type="checkbox" id="faq2" class="hidden peer" />
+                        <label for="faq2" class="w-full text-left text-xl dark:text-[#c3c4c9] font-semibold cursor-pointer flex justify-between items-center peer-label">
+                            How can I schedule a web development consultation with you?
+                            <span class="toggle-btn text-blue-500 transform transition-transform duration-300">▼</span>
+                        </label>
+                        <div class="peer-checked:block hidden mt-3 dark:text-[#AFB0B6]">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, odit officia odio tempora ad corrupti id aliquam deserunt laboriosam, cupiditate iste animi recusandae debitis aliquid mollitia sunt aspernatur dolorem iusto fugiat ducimus? Laborum non cum ex molestiae minus voluptate, veritatis temporibus? At, libero accusamus. Officia ducimus perspiciatis neque accusantium, animi magni nemo illum sint dolore a, quibusdam, nisi dolorum id.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="border-b border-[#0F0E0E1A] dark:border-[#f8fafc0f] pb-4">
+                        <input type="checkbox" id="faq3" class="hidden peer" />
+                        <label for="faq3" class="w-full text-left text-xl dark:text-[#c3c4c9] font-semibold cursor-pointer flex justify-between items-center peer-label">
+                            Can I choose a specific platform for my website?
+                            <span class="toggle-btn text-blue-500 transform transition-transform duration-300">▼</span>
+                        </label>
+                        <div class="peer-checked:block hidden mt-3 dark:text-[#AFB0B6]">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, odit officia odio tempora ad corrupti id aliquam deserunt laboriosam, cupiditate iste animi recusandae debitis aliquid mollitia sunt aspernatur dolorem iusto fugiat ducimus? Laborum non cum ex molestiae minus voluptate, veritatis temporibus? At, libero accusamus. Officia ducimus perspiciatis neque accusantium, animi magni nemo illum sint dolore a, quibusdam, nisi dolorum id.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 4 -->
+                    <div class="border-b border-[#0F0E0E1A] dark:border-[#f8fafc0f] pb-4">
+                        <input type="checkbox" id="faq4" class="hidden peer" />
+                        <label for="faq4" class="w-full text-left text-xl dark:text-[#c3c4c9] font-semibold cursor-pointer flex justify-between items-center peer-label">
+                            What tools and technologies do you use for web development?
+                            <span class="toggle-btn text-blue-500 transform transition-transform duration-300">▼</span>
+                        </label>
+                        <div class="peer-checked:block hidden mt-3 dark:text-[#AFB0B6]">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, odit officia odio tempora ad corrupti id aliquam deserunt laboriosam, cupiditate iste animi recusandae debitis aliquid mollitia sunt aspernatur dolorem iusto fugiat ducimus? Laborum non cum ex molestiae minus voluptate, veritatis temporibus? At, libero accusamus. Officia ducimus perspiciatis neque accusantium, animi magni nemo illum sint dolore a, quibusdam, nisi dolorum id.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 5 -->
+                    <div>
+                        <input type="checkbox" id="faq5" class="hidden peer" />
+                        <label for="faq5" class="w-full text-left text-xl dark:text-[#c3c4c9] font-semibold cursor-pointer flex justify-between items-center peer-label">
+                            Can I choose a specific platform for my website?
+                            <span class="toggle-btn text-blue-500 transform transition-transform duration-300">▼</span>
+                        </label>
+                        <div class="peer-checked:block hidden mt-3 dark:text-[#AFB0B6]">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, odit officia odio tempora ad corrupti id aliquam deserunt laboriosam, cupiditate iste animi recusandae debitis aliquid mollitia sunt aspernatur dolorem iusto fugiat ducimus? Laborum non cum ex molestiae minus voluptate, veritatis temporibus? At, libero accusamus. Officia ducimus perspiciatis neque accusantium, animi magni nemo illum sint dolore a, quibusdam, nisi dolorum id.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main END -->
+
+    <!-- Footer Section -->
+    <section class="xl:px-[100px] px-5 pt-10 border-t border-[#0F0E0E1A] dark:border-[#f8fafc0f]">
+        <div class="max-w-[1400px] mx-auto">
+            <!-- First Footer -->
+            <div class="flex justify-between items-center flex-wrap gap-10 pb-5">
+                <!-- Nav 1 -->
+                <div class="flex flex-col gap-3 uppercase">
+                    <h2 class="dark:text-[#797C86] text-xl font-semibold">Solutions</h2>
+                    <ul class="flex flex-col gap-2">
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">Glintopia</a></li>
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">Fluxway</a></li>
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">Fable’s</a></li>
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">PowerCore</a></li>
+                    </ul>
+                </div>
+                <!-- Nav 2 -->
+                <div class="flex flex-col gap-3 uppercase">
+                    <h2 class="dark:text-[#797C86] text-xl font-semibold">Customers</h2>
+                    <ul class="flex flex-col gap-2">
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">Glintopia</a></li>
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">Fluxway</a></li>
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">Fable’s</a></li>
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">PowerCore</a></li>
+                    </ul>
+                </div>
+                <!-- Nav 3 -->
+                <div class="flex flex-col gap-3 uppercase">
+                    <h2 class="dark:text-[#797C86] text-xl font-semibold">Partners</h2>
+                    <ul class="flex flex-col gap-2">
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">Glintopia</a></li>
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">Fluxway</a></li>
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">Fable’s</a></li>
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">PowerCore</a></li>
+                    </ul>
+                </div>
+                <!-- Nav 4 -->
+                <div class="flex flex-col gap-3 uppercase">
+                    <h2 class="dark:text-[#797C86] text-xl font-semibold">Stakeholders</h2>
+                    <ul class="flex flex-col gap-2">
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">Glintopia</a></li>
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">Fluxway</a></li>
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">Fable’s</a></li>
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">PowerCore</a></li>
+                    </ul>
+                </div>
+                <!-- Nav 5 -->
+                <div class="flex flex-col gap-3 uppercase">
+                    <h2 class="dark:text-[#797C86] text-xl font-semibold">Offerings</h2>
+                    <ul class="flex flex-col gap-2">
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">Visions</a></li>
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">Gatherings</a></li>
+                        <li class="dark:text-white"><a class="border-b border-[#0F0E0E1A] dark:border-[#2F2F37] pb-1" href="#">BizSphere</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Last Footer -->
+            <div class="flex justify-center py-10 dark:text-[#797C86]">
+                <p>© 2024 All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer END -->
+
+    <!-- javaScript For Dark Mode -->
+    <script>
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+        }
+
+
+        // Scroll
+        const header = document.getElementById("header");
+        window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+            if (document.documentElement.classList.contains("dark")) {
+                header.classList.add("bg-slate-900");
+                header.classList.remove("bg-white");
+            } else {
+                header.classList.add("bg-white");
+                header.classList.remove("bg-slate-900");
+            }
+        } else {
+                header.classList.remove("bg-slate-900");
+                header.classList.remove("bg-white");
+            }
+        });
+    </script>
+</body>
+</html>
